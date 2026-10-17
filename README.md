@@ -21,4 +21,4 @@ The canonical domain is set to `https://www.kashiprangan.com` in the same data f
 
 ## Images and fonts
 
-The page uses illustrative Unsplash images and Google Fonts loaded by CSS. Replace the images with property photography for launch. To make all assets self-hosted, add image files under `public/`, update the typed data, and remove the remote image host from `next.config.ts`.
+The city imagery shows Varanasi's ghats and old lanes, plus the Dhamek Stupa at Sarnath. The Sarnath image credit and license are shown beside the gallery. Room images are illustrative Unsplash photos; replace them with verified Kashi Prangan room photography before publishing. The page uses Google Fonts loaded by CSS. Remote image hosts are configured in `next.config.ts`.
