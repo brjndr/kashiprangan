@@ -22,7 +22,7 @@ export const property = {
     { image: "https://pd.w.org/2024/02/30365c0afafa216c6.78758847.jpg", alt: "Sunrise over the Ganges at Dashashwamedh Ghat, Varanasi" },
     { image: "https://images.unsplash.com/photo-1674977100223-677f4a430128?auto=format&fit=crop&w=1200&q=85", alt: "A narrow historic lane in Varanasi with closely set old buildings" },
     { image: "https://images.unsplash.com/photo-1762513208447-94014ca5e8d9?auto=format&fit=crop&w=1200&q=85", alt: "Munshi Ghat's historic facades, steps and boats on the Ganges" },
-    { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dhamekh_Stupa%2C_where_the_Buddha_gave_the_first_sermon_on_the_Four_Noble_Truths_and_the_Eightfold_Path_to_his_five_disciples%2C_Sarnath.jpg/1280px-Dhamekh_Stupa%2C_where_the_Buddha_gave_the_first_sermon_on_the_Four_Noble_Truths_and_the_Eightfold_Path_to_his_five_disciples%2C_Sarnath.jpg", alt: "Dhamek Stupa among the gardens and archaeological remains at Sarnath" },
+    { image: "/sarnath-dhamek-stupa.jpg", alt: "Dhamek Stupa among the gardens and archaeological remains at Sarnath" },
   ],
   amenities: ["Thoughtful, personal hosting", "Fresh linens & daily essentials", "Complimentary Wi-Fi", "Air-conditioned rooms", "Local breakfast (details to confirm)", "Travel assistance on request"],
   attractions: [
