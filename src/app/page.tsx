@@ -5,6 +5,22 @@ import { SiteHeader } from "@/components/site-header";
 
 function Eyebrow({ children }: { children: React.ReactNode }) { return <p className="eyebrow">{children}</p>; }
 
+function TempleBell({ className }: { className: string }) {
+  return <span className={`temple-bell ${className}`}>
+    <svg viewBox="0 0 64 96" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="bellGold" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stopColor="#754616"/><stop offset=".2" stopColor="#c18a2c"/><stop offset=".43" stopColor="#f2cf75"/><stop offset=".62" stopColor="#bd8326"/><stop offset=".82" stopColor="#e9bd5b"/><stop offset="1" stopColor="#704114"/></linearGradient></defs>
+      <path className="bell-chain" d="M32 0v11" />
+      <path className="bell-loop" d="M27 13a5 5 0 0 1 10 0v3H27z" />
+      <path className="bell-body" d="M25 17h14v8c0 5 2 8 6 12 3 3 4 8 5 14 2 9 6 15 10 20v5H4v-5c4-5 8-11 10-20 1-6 2-11 5-14 4-4 6-7 6-12z" />
+      <path className="bell-crown" d="M25 20h14M23 31h18M18 43h28M13 57h38" />
+      <path className="bell-engraving" d="M21 37c3 3 6 4 11 4s8-1 11-4M16 51c5 4 10 6 16 6s11-2 16-6M9 68c7 4 15 6 23 6s16-2 23-6" />
+      <path className="bell-rim" d="M4 76h56l-3 5H7z" />
+      <path className="bell-clapper" d="M32 78v10" />
+      <circle className="bell-clapper" cx="32" cy="91" r="3" />
+    </svg>
+  </span>;
+}
+
 export default function Home() {
   const jsonLd = { "@context": "https://schema.org", "@type": "LodgingBusiness", name: property.name, description: property.description, url: property.canonicalUrl, image: property.heroImage, telephone: property.phone, email: property.email, address: { "@type": "PostalAddress", streetAddress: property.address, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" } };
   return <>
@@ -14,6 +30,7 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <Image className="hero-image" src={property.heroImage} alt={property.heroAlt} fill priority sizes="100vw" />
         <div className="hero-shade" />
+        <div className="temple-ornament" aria-hidden="true"><span className="marigold-swag swag-one"/><span className="marigold-swag swag-two"/><TempleBell className="bell-one"/><TempleBell className="bell-two"/><TempleBell className="bell-three"/><span className="shrine-glow"/></div>
         <div className="hero-content"><Eyebrow>A HOME IN THE HEART OF KASHI</Eyebrow><h1 id="hero-title">Come closer<br />to <em>the real Kashi.</em></h1><p>{property.tagline}</p><Link className="button button-light" href="#about">Discover our home <span aria-hidden="true">↓</span></Link></div>
         <div className="hero-caption"><span>VARANASI, INDIA</span><span>25°18′ N &nbsp; 83°00′ E</span></div>
         <div className="hero-stamp" aria-hidden="true"><span>काशी</span><small>THE CITY<br />OF LIGHT</small></div>
