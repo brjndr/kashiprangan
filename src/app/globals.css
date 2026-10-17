@@ -83,6 +83,36 @@ body{background-color:#f5eddf;background-image:radial-gradient(ellipse at 50% 18
 @media(max-width:720px){.marigold-swag{width:52%;height:88px}.temple-bell{width:26px;height:40px}.temple-bell:before{left:10px}.temple-bell:after{left:9px}.bell-three{display:none}.hero-content{top:49%}}
 @media(prefers-reduced-motion:reduce){.temple-bell{animation:none}}
 
+/* Use one vector floral accent everywhere so it renders consistently across devices. */
+.ornament{display:block;width:30px;height:30px;color:#d7aa83}
+.amenities li{display:flex;align-items:center;gap:10px}
+.amenities li .amenity-mark{flex:0 0 12px;width:12px;height:12px;color:var(--saffron)}
+.footer-greeting{display:inline-flex;align-items:center;gap:7px}
+.footer-mark{width:13px;height:13px;color:#e9bd78}
+.namaste-mark{display:block;width:12px;height:12px;color:#e9bd78}
+@media(max-width:720px){.ornament{width:23px;height:23px}}
+
+@media(min-width:721px){
+  .eyebrow{font-size:11px}
+  .main-navigation{font-size:13px}
+  .button{font-size:12px}
+  .hero-caption{font-size:10px}
+  .hero-stamp small{font-size:8px}
+  .text-link{font-size:12px}
+  .small-note{font-size:11px}
+  .room-number{font-size:10px}
+  .room-meta p{font-size:12px}
+  .amenities li{font-size:12px}
+  .attraction-index,.distance{font-size:10px}
+  .attraction p,.guest-notes p{font-size:12px}
+  .contact-details .eyebrow{font-size:10px}
+  .contact-copy>p:not(.eyebrow){font-size:13px}
+  .footer-bottom{font-size:10px}
+  .back-top{font-size:11px}
+  .footer-greeting{font-size:12px}
+  .namaste-mark{width:12px;height:12px}
+}
+
 /* Let the temple palette flow from one section to the next. */
 .site-header{height:76px;padding-inline:8%;box-shadow:0 5px 24px rgba(65,39,22,.08);backdrop-filter:blur(12px)}
 .main-navigation{color:#594637;gap:clamp(20px,3vw,42px)}
