@@ -20,7 +20,6 @@ Keep property content in a central typed data file where practical.
 - Warm, welcoming hospitality style; mobile-first responsive layout
 - Clear typography, spacing, and visual hierarchy
 - Semantic HTML, keyboard accessibility, visible focus, sufficient contrast, and meaningful image alt text
-- Subtle animation; respect `prefers-reduced-motion`
 - if required take reference from other websites but make it beautiful and elegant
 
 ## Technical Rules

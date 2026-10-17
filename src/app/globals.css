@@ -4,3 +4,50 @@
 @media(max-width:1000px){.section-wrap{padding-left:8%;padding-right:8%}.intro{grid-template-columns:.4fr 1.1fr .9fr;gap:4%}.intro-photo{height:300px}.room-image{height:240px}.guest-info{padding-left:8%;padding-right:8%}.hero-content{left:9%}}
 @media(max-width:720px){html{scroll-padding-top:70px}.site-header{height:70px;padding:0 6%}.wordmark{font-size:16px}.menu-toggle{display:grid;place-items:center;background:none;border:0;color:var(--ink);font-size:23px;width:42px;height:42px;cursor:pointer}.main-navigation{display:none;position:absolute;left:0;right:0;top:70px;padding:10px 6% 24px;background:var(--paper);box-shadow:0 15px 20px #273b3412;align-items:stretch;gap:0}.main-navigation.is-open{display:flex;flex-direction:column}.main-navigation>a{padding:12px 0;border-bottom:1px solid var(--line)}.main-navigation .nav-cta{border:0}.hero{height:660px;min-height:560px;max-height:calc(100svh - 70px)}.hero-image{object-position:38% center}.hero-shade{background:linear-gradient(90deg,rgba(20,35,29,.68),rgba(23,39,32,.18) 56%),radial-gradient(ellipse at 82% 28%,rgba(238,177,112,.1),transparent 42%),linear-gradient(0deg,rgba(17,36,30,.26),transparent 40%)}.hero-content{left:7%;right:7%;top:47%}.hero h1{font-size:clamp(56px,13vw,78px)}.hero-content>p:not(.eyebrow){font-size:17px}.hero-stamp{width:82px;height:82px;right:8%;bottom:12%}.hero-stamp>span{font-size:20px}.hero-stamp small{font-size:6px}.hero-caption{left:7%;right:7%;font-size:7px}.section-wrap{padding-left:7%;padding-right:7%}.intro{padding-top:88px;padding-bottom:90px;grid-template-columns:1fr;gap:12px}.intro-aside{display:flex;justify-content:space-between;align-items:center}.intro-aside .eyebrow{margin:0}.ornament{font-size:23px}.intro-copy h2,.section-heading h2,.essentials-title h2,.guest-info h2,.contact h2{font-size:clamp(43px,10.2vw,59px)}.intro-lead{font-size:19px;margin-top:21px}.intro-photo{height:310px;width:88%;margin:15px 0 19px auto}.rooms{padding-top:78px;padding-bottom:76px}.section-heading{display:block;margin-bottom:28px}.section-heading>p{margin-top:17px;max-width:380px;font-size:14px}.room-grid{grid-template-columns:1fr;gap:27px}.room-image{height:280px}.room-card:nth-child(2){margin-left:8%}.room-card:nth-child(2) .room-image{height:240px}.room-card:nth-child(3) .room-image{height:265px}.quote-band{min-height:300px}.quote-band blockquote{font-size:30px}.gallery{padding-top:82px;padding-bottom:83px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px;gap:9px}.gallery-item-1{grid-column:1;grid-row:span 2}.gallery-item-2{grid-column:2;grid-row:1}.gallery-item-3{grid-column:2;grid-row:2}.gallery-item-4{display:none}.essentials{padding-top:83px;padding-bottom:84px;grid-template-columns:1fr;gap:38px}.essentials-title>p:not(.eyebrow){max-width:340px}.amenities ul{gap:11px 12px}.amenities li{font-size:9px}.guest-info{padding:78px 7%}.guest-info-inner{grid-template-columns:1fr;gap:29px}.contact{grid-template-columns:1fr;gap:46px;padding-top:83px;padding-bottom:79px}.contact-details{padding-top:0}.contact-details>div{margin-bottom:16px}.footer-top{align-items:flex-start;gap:12px;flex-wrap:wrap}.footer-top>span{width:100%;order:3;font-size:12px}.footer-bottom{gap:8px;flex-wrap:wrap;font-size:7px}.footer-bottom span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+/* Shared depth accents carry the 3D treatment through the full page. */
+.site-header{box-shadow:0 5px 18px rgba(39,59,52,.07)}
+.hero-stamp{box-shadow:inset 0 0 0 5px rgba(255,255,255,.035),0 12px 28px rgba(14,28,24,.18)}
+.amenities li,.attraction,.guest-notes article,.contact-details>div,.footer-top .wordmark{transform-style:preserve-3d;transition:transform .35s cubic-bezier(.2,.7,.2,1),background-color .35s ease,box-shadow .35s ease}
+.amenities li{padding:4px 7px;border-radius:4px;background:rgba(255,253,247,.46);box-shadow:0 3px 10px rgba(39,59,52,.055)}
+.attraction{padding-right:8px;padding-left:8px;border-radius:4px;background:rgba(255,253,247,.2);box-shadow:0 3px 10px rgba(39,59,52,.045)}
+.guest-notes article,.contact-details>div{padding-right:10px;padding-left:10px;border-radius:5px;background:rgba(255,253,247,.32)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+.site-header{transform-style:preserve-3d}
+.main-navigation>a:hover,.wordmark:hover,.footer-top .wordmark:hover{transform:translateZ(5px)}
+.nav-cta:hover,.button:hover,.button:focus-visible{transform:perspective(700px) translateY(-3px) rotateX(2deg);box-shadow:0 12px 24px rgba(39,59,52,.16)}
+.hero-stamp:hover{transform:perspective(500px) rotate(9deg) rotateY(-10deg) translateZ(14px);box-shadow:inset 0 0 0 5px rgba(255,255,255,.07),0 18px 34px rgba(14,28,24,.26)}
+.intro-photo{transform-style:preserve-3d;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}
+.intro-photo:hover{transform:perspective(1000px) rotateY(-2deg) rotateX(1deg) translateY(-4px);box-shadow:0 18px 34px rgba(39,59,52,.17)}
+.amenities li:hover{transform:perspective(600px) rotateX(3deg) translateZ(6px);background:rgba(255,255,255,.86);box-shadow:0 9px 18px rgba(39,59,52,.11)}
+.attraction:hover{transform:perspective(800px) rotateX(1deg) translateZ(7px);background:rgba(255,253,247,.78);box-shadow:0 9px 18px rgba(39,59,52,.1)}
+.guest-notes article:hover,.contact-details>div:hover{transform:perspective(800px) rotateY(-1deg) translateZ(7px);background:rgba(255,253,247,.82);box-shadow:0 10px 22px rgba(39,59,52,.1)}
+}
+
+/* Immersive page-wide spatial composition. */
+#main{perspective:1800px;perspective-origin:50% 0%;transform-style:preserve-3d}
+.site-header{position:relative;z-index:20;box-shadow:0 10px 28px rgba(30,49,42,.12),0 2px 0 rgba(255,255,255,.8)}
+.hero{width:min(96%,1600px);margin:16px auto 0;border:1px solid rgba(255,255,255,.66);border-radius:14px;transform:perspective(1400px) rotateX(1.5deg) translateZ(26px);transform-origin:center top;transform-style:preserve-3d;box-shadow:0 15px 0 -7px rgba(173,126,86,.42),0 40px 78px -30px rgba(28,45,38,.52)}
+.hero-image{transform:translateZ(-28px) scale(1.065)}
+.hero-shade{transform:translateZ(-12px) scale(1.025)}
+.hero-content{transform:translateY(-47%) translateZ(68px)}
+.hero-caption{transform:translateZ(34px)}
+.hero-stamp{transform:rotate(9deg) translateZ(74px)}
+.hero::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,245,225,.36);border-radius:7px;box-shadow:inset 0 0 36px rgba(255,224,185,.06);transform:translateZ(18px);pointer-events:none}
+.intro,.rooms,.quote-band,.gallery,.essentials,.guest-info,.contact{width:min(94%,1440px);margin:44px auto;border:1px solid rgba(255,255,255,.72);border-radius:18px;transform:perspective(1500px) rotateX(1.5deg) rotateY(var(--section-y,0deg)) translateZ(14px);transform-origin:center top;transform-style:preserve-3d;box-shadow:0 12px 0 -5px rgba(180,143,105,.33),0 34px 66px -30px rgba(35,54,46,.35),inset 0 1px 0 rgba(255,255,255,.94)}
+.intro,.gallery,.guest-info{--section-y:-.7deg;background:var(--paper)}
+.rooms,.essentials,.contact{--section-y:.7deg}
+.intro{padding-left:10%;padding-right:10%}
+.rooms,.gallery,.essentials,.contact{padding-left:9%;padding-right:9%}
+.quote-band{--section-y:0deg;min-height:390px}
+.guest-info{padding-left:10%;padding-right:10%}
+.site-footer{width:min(94%,1440px);margin:46px auto 20px;border:1px solid rgba(255,255,255,.22);border-radius:18px;transform:perspective(1500px) rotateX(1.2deg) translateZ(12px);transform-origin:center top;box-shadow:0 12px 0 -5px rgba(180,143,105,.26),0 34px 66px -30px rgba(35,54,46,.42)}
+@media(max-width:720px){
+.hero{width:calc(100% - 18px);margin-top:10px;border-radius:10px;transform:perspective(1000px) rotateX(.8deg) translateZ(8px);box-shadow:0 8px 0 -4px rgba(173,126,86,.35),0 24px 42px -22px rgba(28,45,38,.48)}
+.hero::after{inset:8px}
+.intro,.rooms,.quote-band,.gallery,.essentials,.guest-info,.contact{width:calc(100% - 28px);margin:28px auto;border-radius:13px;transform:perspective(1000px) rotateX(.8deg) translateZ(5px);box-shadow:0 8px 0 -4px rgba(180,143,105,.28),0 22px 42px -24px rgba(35,54,46,.3),inset 0 1px 0 rgba(255,255,255,.9)}
+.intro{padding-left:7%;padding-right:7%}
+.rooms,.gallery,.essentials,.contact,.guest-info{padding-left:7%;padding-right:7%}
+.quote-band{min-height:320px}
+.site-footer{width:calc(100% - 28px);margin:30px auto 14px;border-radius:13px;transform:perspective(1000px) rotateX(.7deg) translateZ(4px)}
+}
