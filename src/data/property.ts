@@ -11,8 +11,8 @@ export const property = {
   email: "hello@kashiprangan.com",
   whatsapp: "910000000000",
   address: "Add your complete address, Varanasi, Uttar Pradesh, India",
-  heroImage: "https://images.unsplash.com/photo-1762513103277-aaf4443001fa?auto=format&fit=crop&w=2400&q=85",
-  heroAlt: "A broad view of Varanasi's ghats, riverside buildings and boats along the Ganges",
+  heroImage: "/varanasi-ghats-golden-hour.jpg",
+  heroAlt: "Varanasi's ghats and boats along the Ganges at golden hour",
   rooms: [
     { name: "The Courtyard Room", detail: "A quiet retreat opening onto the heart of the home.", image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85", alt: "Calm, sunlit guest room with warm natural textures" },
     { name: "The Ganga Room", detail: "A restful space made for slow mornings and softer evenings.", image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85", alt: "Thoughtfully furnished room with soft neutral colours" },
